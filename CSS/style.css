@@ -1,0 +1,272 @@
+:root {
+    --clr-light: white;
+    --clr-dark: rgb(63, 63, 63);
+    --clr-yellow: rgba(224, 187, 18, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../IMG/fabian-quintero-UWQP2mh5YJI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--clr-light);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+nav h3 {
+    font-weight: bold;
+    flex-basis: 140px;
+    flex-grow: 1;
+}
+
+li {
+    display: inline-flex;
+    padding: 1em;
+    flex-grow: 1;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container1 a {
+    color: var(--clr-light);
+    text-decoration: none;
+    background-color: var(--clr-yellow);
+    padding: 10px 20px;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    color: var(--clr-dark);
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 60%;
+    margin: 5em auto 0 auto;
+}
+
+hr {
+    width: 100px;
+    height: 3px;
+    background-color: var(--clr-yellow);
+    border: none;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5em auto;
+}
+
+.img {
+    height: 10em;
+    margin-bottom: 1em;
+
+}
+
+.short {
+    flex: 0 1 39%;
+}
+
+.long {
+    flex: 0 1 59%;
+}
+
+.img1,
+.img3 {
+    margin-right: 1%;
+}
+
+.img1 {
+    background-image: url(../IMG/raimond-klavins-L6jxljMeUoo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    background-image: url(../IMG/abraham-r-Zl9oz8OgkHc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img3 {
+    background-image: url(../IMG/bryan-ramos-Gleddoutdu4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 {
+    background-image: url(../IMG/bryson-ZUGxHExSp88-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container4 {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    flex-basis: 300px;
+    margin: 0 auto;
+}
+
+.service i {
+    font-size: 30px;
+    color: var(--clr-yellow);
+}
+
+form {
+    width: 60%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-element1 {
+    flex-basis: 200px;
+    padding: 5px;
+    margin: .5em 2em 5em 0;
+    height: 30px;
+    flex-grow: 2;
+}
+
+.form-element2 {
+    flex-basis: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--clr-light);
+    background-color: var(--clr-yellow);
+    border: none;
+    margin: .5em auto;
+    height: 30px;
+    flex-grow: 1;
+}
+
+button:hover {
+    background-color: var(--clr-dark);
+}
+
+footer {
+    width: 100%;
+    color: var(--clr-light);
+    font-size: 15px;
+    background-color: var(--clr-dark);
+    padding: .5em;
+}
+
+.footer-container {
+    width: 20%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.icons {
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    main {
+        width: 95%;
+    }
+
+    .container2 {
+        width: 80%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container2 {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    li {
+        padding: .5em;
+    }
+
+    .img1,
+    .img3 {
+        margin-right: 0;
+    }
+
+    .short {
+        flex: 0 1 100%;
+    }
+
+    .long {
+        flex: 0 1 100%;
+    }
+
+    .footer-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container2 {
+        width: 95%;
+    }
+
+    form {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .form-element2 {
+        flex-basis: 500px;
+        margin: .5em auto;
+    }
+
+    .form-element1 {
+        flex-basis: 200px;
+        margin: .5em auto;
+    }
+
+    .footer-container {
+        width: 60%;
+    }
+}
